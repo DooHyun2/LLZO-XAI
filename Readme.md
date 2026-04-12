@@ -15,6 +15,11 @@
 
   ![Global SHAP Summary](results/LLZO_shap_beeswarm.png)
 
+How to read: Each plot isolates one feature. 
+The x-axis is the feature value, the y-axis is its SHAP 
+contribution to σ(ion). The color shows a second feature, 
+so vertical spread at a given x reveals interaction effects.
+
 
 Sintering temperature has the widest spread, 
 meaning it drives most of the variance in σ(ion); 
@@ -23,10 +28,7 @@ high values (red) consistently push conductivity up,
 Dopant fraction and Li excess follow the same monotonic pattern 
 with smaller magnitude. Dopant type (categorical) and grain size contribute only marginally.
 
-How to read: Each plot isolates one feature. 
-The x-axis is the feature value, the y-axis is its SHAP 
-contribution to σ(ion). The color shows a second feature, 
-so vertical spread at a given x reveals interaction effects.
+
 
 
   ![Dependence Plots](results/shap_dependence_combined.png)
