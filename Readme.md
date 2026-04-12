@@ -15,7 +15,7 @@
 
 
 
-  ![SHAP dependence: dopant_frac](results/shap_depend_dopant_frac.png)
+  ![Global SHAP Summary](results/LLZO_shap_beeswarm.png)
 
 
 
