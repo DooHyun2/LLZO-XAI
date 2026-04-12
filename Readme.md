@@ -11,8 +11,6 @@
 
  
  # Results
-  ![Feature Importance](results/feat_importance.png).
-
 
 
   ![Global SHAP Summary](results/LLZO_shap_beeswarm.png)
