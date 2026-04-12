@@ -1,5 +1,4 @@
-# LLZO-SHAP: Interpretable ML Analysis of Dopant Effects 
-  on Li-ion Conductivity in LLZO Solid Electrolytes
+# LLZO-SHAP: Interpretable ML Analysis of Dopant Effects on Li-ion Conductivity in LLZO Solid Electrolytes
 
 
  # Motivation
