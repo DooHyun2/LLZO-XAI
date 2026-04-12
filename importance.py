@@ -1,4 +1,4 @@
-# SHAP beeswarm plot for LLZO ionic conductivity (synthetic)
+# SHAP importance for LLZO ionic conductivity (synthetic)
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
