@@ -36,11 +36,11 @@ shap_values = explainer.shap_values(Xte)   # shape = [n_samples, n_features]
 # SHAP summary plot
 shap.summary_plot(shap_values, Xte, show=False)
 plt.tight_layout()
-plt.savefig("results/llzo_shap_beeswarm.png", dpi=300, bbox_inches="tight")
+plt.savefig("results/LLZO_shap_beeswarm.png", dpi=300, bbox_inches="tight")
 plt.close()
 
 # SHAP dependence plots (top features)
-top_feats = ["sinter_temp", "dopant_frac", "li_excess"]
+top_feats = ["sinter_temp", "dopant_frac", "Li_excess"]
 for feat in top_feats:
     shap.dependence_plot(feat, shap_values, Xte, show=False)
     plt.tight_layout()
