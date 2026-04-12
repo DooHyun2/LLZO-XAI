@@ -1,27 +1,34 @@
+# LLZO-SHAP: Interpretable ML Analysis of Dopant Effects 
+  on Li-ion Conductivity in LLZO Solid Electrolytes
 
 
-  #LLZO Ionic Conductivity (Synthetic) — SHAP Analysis#
+ # Motivation
 
-  ![LLZO SHAP Beeswarm](results/llzo_shap_beeswarm.png)
 
-  Target: Ionic conductivity trend sigma(ion) in LLZO (synthetic).
-  Insight: Sintering temperature dominates sigma(ion), followed by dopant fraction
-  and Li excess with clear non-linear effects; dopant type and grain size are secondary.
+ Decompose the effects of sintering temperature, doping, 
+ and Li excess on ionic conductivity σ(ion) in solid-state electrolyte LLZO into interpretable components using MI and SHAP.
+
+
+ 
+ # Results
+  ![Feature Importance](results/feat_importance.png).
+
+
 
   ![SHAP dependence: dopant_frac](results/shap_depend_dopant_frac.png)
 
-  Dopant fraction was selected for further analysis due to its strong non-linear
-  contribution observed in the global SHAP summary.
 
+
+  ![Dependence Plots](results/shap_dependence_combined.png)
   
-  Dependence: The effect of dopant fraction on sigma(ion) is non-linear and modulated
-  by sintering temperature, indicating coupled processing-composition effects.
-  
+
 
   
    How to run
   
-  -python beeswarm.py
+  -python data_synth_LLZO.py
+
+  -python importance.py
   
   -python shap_LLZO.py
 
