@@ -14,11 +14,7 @@
 
   ![Global SHAP Summary](results/LLZO_shap_beeswarm.png)
 
-How to read: Each plot isolates one feature. 
-The x-axis is the feature value, the y-axis is its SHAP 
-contribution to σ(ion). The color shows a second feature, 
-so vertical spread at a given x reveals interaction effects.
-
+How to read: Each dot is one sample. The x-axis shows how much that feature pushed the predicted σ(ion) up (right) or down (left). Color indicates the feature value — red = high, blue = low.
 
 Sintering temperature has the widest spread, 
 meaning it drives most of the variance in σ(ion); 
