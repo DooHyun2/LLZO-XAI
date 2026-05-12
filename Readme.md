@@ -1,4 +1,4 @@
-# LLZO-SHAP: Interpretable MI Analysis of Dopant Effects on Li-ion Conductivity in LLZO Solid Electrolytes
+# LLZO-Synthetic: Interpretable MI Analysis of Dopant Effects on Li-ion Conductivity in LLZO Solid Electrolytes
 
 Random Forest + SHAP pipeline for decomposing processing–composition effects on Li-ion conductivity (synthetic LLZO testbed)
 
