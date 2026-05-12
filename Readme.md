@@ -71,7 +71,8 @@ and Li excess (~0.04). Grain size and dopant type contribute marginally.
 
 
 
-<img width="512" height="384" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
+<img width="768" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
+
 RF impurity-based feature importance bar chart
 
 ## Results
@@ -79,7 +80,8 @@ RF impurity-based feature importance bar chart
 ### SHAP Feature Ranking
 
 
-<img width="750" height="500" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/8a792668-28bc-4f70-b68f-0624787bc8c0" />
+<img width="900" height="600" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/8a792668-28bc-4f70-b68f-0624787bc8c0" />
+
 SHAP beeswarm summary plot
 
 Figure 2: SHAP beeswarm. Each dot is one sample; x-axis shows how 
@@ -96,7 +98,8 @@ size contribute only marginally.
 
 ### Dependence Plots (Top-3 Features)
 
-<img width="750" height="500" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/5cca192f-f36e-4d29-ab71-1e39346c4c3a" />
+<img width="900" height="600" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/5cca192f-f36e-4d29-ab71-1e39346c4c3a" />
+
 Figure 3a : sinter_temp dependence, colored by dopant_frac
 
 The sintering curve shows a clear **densification → optimum → 
@@ -109,7 +112,8 @@ well-mixed vertically, indicating the sintering effect is largely
 independent of dopant loading in this range.
 
 
-<img width="750" height="500" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
+<img width="900" height="600" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
+
 Figure 3b : dopant_frac dependence, colored by sinter_temp
 
 
@@ -122,6 +126,7 @@ dopant–temperature regime
 
 
 <img width="1134" height="508" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/113b443f-77f3-4029-9114-deb83fc87d41" />
+
 Figure 3c: Li_excess dependence, colored by sinter_temp
 
 
