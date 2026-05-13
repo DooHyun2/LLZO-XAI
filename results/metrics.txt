@@ -1,0 +1,4 @@
+Test R2: 0.8817
+Test MAE: 0.062
+5-fold CV R2 mean: 0.8953
+5-fold CV R2 std: 0.0214
