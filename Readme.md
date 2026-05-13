@@ -80,7 +80,8 @@ RF impurity-based feature importance bar chart
 ### SHAP Feature Ranking
 
 
-<img width="900" height="600" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/8a792668-28bc-4f70-b68f-0624787bc8c0" />
+<img width="750" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
+
 
 SHAP beeswarm summary plot
 
@@ -92,13 +93,12 @@ Color indicates feature value — red = high, blue = low.
 How to read: sintering temperature has the widest SHAP spread 
 (roughly −0.5 to +0.2), meaning it drives most of the variance in 
 σ(ion). High values (red) push conductivity up, low values (blue) 
-push it strongly down. Dopant fraction and Li excess follow 
-monotonic patterns with smaller magnitude. Dopant type and grain 
+push it strongly down. Dopant fraction and Li excess show smaller but consistent directional contributions — high values (red) cluster on the right, low values (blue) on the left — with monotonicity confirmed in the dependence plots below. Dopant type and grain 
 size contribute only marginally.
 
 ### Dependence Plots (Top-3 Features)
 
-<img width="900" height="600" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/5cca192f-f36e-4d29-ab71-1e39346c4c3a" />
+<img width="800" height="520" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
 
 Figure 3a : sinter_temp dependence, colored by dopant_frac
 
@@ -112,7 +112,8 @@ well-mixed vertically, indicating the sintering effect is largely
 independent of dopant loading in this range.
 
 
-<img width="900" height="600" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
+<img width="770" height="500" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/5cca192f-f36e-4d29-ab71-1e39346c4c3a" />
+
 
 Figure 3b : dopant_frac dependence, colored by sinter_temp
 
@@ -125,15 +126,15 @@ from sintering temperature, rather than dominated by a single
 dopant–temperature regime
 
 
-<img width="1134" height="508" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/113b443f-77f3-4029-9114-deb83fc87d41" />
+<img width="800" height="560" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/74ac23b0-2539-49a2-b7ee-c03acb59266c" />
 
 Figure 3c: Li_excess dependence, colored by sinter_temp
 
 
 Li excess contributes a near-linear positive trend that begins to 
 plateau around 0.15, plausibly reflecting the saturation of Li-site 
-compensation once volatilization losses are offset. The mild vertical 
-spread reflects modest coupling with sintering temperature
+compensation once volatilization losses are offset. 
+Color (sinter_temp) is well-mixed vertically with no systematic blue-low / red-high pattern, indicating that the Li excess effect operates largely independently of sintering temperature in this dataset
 
 
 ## Summary
@@ -161,10 +162,10 @@ physics. Discovery on real data is the role of Lithium-Solid-State-Electrolyte-S
 
 
 ## How to run
-
+```bash
 python data_synth_LLZO.py   # generate synthetic_LLZO.csv (run once)
 python analysis.py          # train, evaluate, and SHAP analysis
-
+```
 ## License
 
 Code: MIT License
