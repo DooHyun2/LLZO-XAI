@@ -217,7 +217,7 @@ Note: The objective log₁₀(σ) refers to the normalized synthetic target (sig
 ```bash
 python data_synth_LLZO.py   # generate synthetic_LLZO.csv (run once)
 python analysis.py          # train, evaluate, and SHAP analysis
-python bo_gpr_LLZO.py              # Bayesian Optimization (GPR + EI) on synthetic LLZO
+python bo_gpr_LLZO.py       # Bayesian Optimization (GPR + EI) on synthetic LLZO
 ```
 ## License
 
