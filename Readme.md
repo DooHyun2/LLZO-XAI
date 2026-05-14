@@ -84,6 +84,8 @@ achieves LOOCV R² ≈ 0.698, illustrating the gap between controlled
 
 testbeds and experimental settings.
 
+
+
 *Figure 1: RF impurity-based feature importance.*
 
 Sintering temperature dominates (~0.83), followed by dopant fraction (~0.10) and Li excess (~0.04); grain size and dopant type contribute marginally. 
