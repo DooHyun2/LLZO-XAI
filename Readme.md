@@ -211,6 +211,8 @@ The RF model trained on synthetic data serves as an oracle. GPR learns the respo
 
 The dashed line marks the end of random initialization (n=10). Subsequent BO iterations make targeted improvements, converging to log₁₀(σ) = 1.265.
 
+Note: The objective log₁₀(σ) refers to the normalized synthetic target (sigma_ion in arbitrary units), not actual S/cm. The optimization is performed entirely within the synthetic testbed, where the RF oracle is reliable; absolute values are not physically meaningful and should not be compared to real LLZO conductivity.
+
 ## How to run
 ```bash
 python data_synth_LLZO.py   # generate synthetic_LLZO.csv (run once)
