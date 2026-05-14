@@ -1,10 +1,8 @@
 # LLZO-Synthetic: SHAP Pipeline Validation on Synthetic LLZO Data
 
-Random Forest + SHAP pipeline for decomposing processing–composition 
+Random Forest + SHAP + Bayesian Optimization pipeline for decomposing and optimizing processing–composition effects on Li-ion conductivity in LLZO solid electrolytes (synthetic testbed).
 
-effects on Li-ion conductivity in LLZO solid electrolytes (synthetic 
-
-testbed). Designed as a methodological precursor to "Lithium-Solid-State-Electrolyte-SHAP", which applies the same framework to real experimental data.
+Designed as a methodological precursor to "Lithium-Solid-State-Electrolyte-SHAP", which applies the same framework to real experimental data.
 
 
 
@@ -204,10 +202,20 @@ ability to recover embedded relationships rather than discover new
 physics. Discovery on real data is the role of Lithium-Solid-State-Electrolyte-SHAP.
 
 
+## Bayesian Optimization (GPR + EI)
+
+Beyond interpretation, this repository also demonstrates composition optimization using Bayesian Optimization with a Gaussian Process surrogate (GPR) and Expected Improvement (EI) acquisition function.
+The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize log₁₀(σ). The convergence curve shows that BO identifies near-optimal compositions within ~20 iterations, improving upon the random initialization baseline.
+
+<img width="600" height="381" alt="bo_convergence" src="https://github.com/user-attachments/assets/845977d3-fb5a-4c1d-a7d1-8d1e717b85c1" />
+
+The dashed line marks the end of random initialization (n=10). Subsequent BO iterations make targeted improvements, converging to log₁₀(σ) = 1.265.
+
 ## How to run
 ```bash
 python data_synth_LLZO.py   # generate synthetic_LLZO.csv (run once)
 python analysis.py          # train, evaluate, and SHAP analysis
+
 ```
 ## License
 
