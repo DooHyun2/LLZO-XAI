@@ -57,11 +57,8 @@ target choice for each data type.
 ## Method
 
 - Random Forest Regressor ('n_estimators=400', 'random_state=43')
-- 
 - 25% test split + 5-fold cross-validation for stable evaluation
-- 
 - SHAP 'TreeExplainer' computed over the full N=400 dataset
-- 
 - Top-3 features visualized with 'dependence_plot'
 
 ## Model Performance
