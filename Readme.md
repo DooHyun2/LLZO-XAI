@@ -84,12 +84,13 @@ achieves LOOCV R² ≈ 0.698, illustrating the gap between controlled
 
 testbeds and experimental settings.
 
-Figure 1: RF feature importance. Sintering temperature dominates 
+*Figure 1: RF impurity-based feature importance.*
 
-(~0.83 of total importance), followed by dopant fraction (~0.10) 
+Sintering temperature dominates (~0.83), followed by dopant fraction (~0.10) and Li excess (~0.04); grain size and dopant type contribute marginally. 
 
-and Li excess (~0.04). Grain size and dopant type contribute marginally.
+Impurity-based importance is shown alongside SHAP (Figure 2) as a cross-method sanity check for pipeline validation purposes. 
 
+Note: impurity-based importance is known to be biased toward high-cardinality features, which is why SHAP serves as the primary attribution method throughout the analysis.
 
 
 <img width="768" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
