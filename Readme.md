@@ -126,7 +126,7 @@ size contribute only marginally.
 
 ### Dependence Plots (Top-3 Features)
 
-<img width="700" height="450" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
+<img width="660" height="450" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
 
 Figure 3a : sinter_temp dependence, colored by dopant_frac
 
