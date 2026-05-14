@@ -132,9 +132,7 @@ Figure 3a : sinter_temp dependence, colored by dopant_frac
 
 The sintering curve shows a clear **densification → optimum → 
 
-post-peak decline** structure: SHAP values rise sharply from 900 °C, 
-
-plateau around 1100–1160 °C, then decline slightly above 1200 °C. 
+post-peak decline** structure: SHAP values rise sharply from 900°C, plateau across approximately 1100-1200°C with the mathematical optimum at 1160°C, then decline clearly above 1200°C
 
 This non-monotonic shape reproduces the well-known LLZO sintering 
 
