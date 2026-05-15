@@ -1,4 +1,4 @@
-# LLZO-Synthetic: SHAP Pipeline Validation on Synthetic LLZO Data
+# LLZO-Synthetic: SHAP Interpretation and Bayesian Optimization on Synthetic LLZO Data
 
 Random Forest + SHAP + Bayesian Optimization pipeline for decomposing and optimizing processing–composition effects on Li-ion conductivity in LLZO solid electrolytes (synthetic testbed).
 
