@@ -183,10 +183,7 @@ indicating that the Li excess effect operates largely independently of sintering
 The RF + SHAP pipeline recovers **three physically meaningful trends** 
 from the synthetic LLZO data:
 
-1. Sintering-driven densification with a clear optimum near 
-   1100–1160 °C — both the rise and the post-peak decline are 
-   recovered, validating that SHAP captures non-monotonic dependencies, 
-   not just linear trends.
+1. Sintering-driven densification with the mathematical optimum at 1160°C and a visible plateau across 1100–1200°C — both the rise and the post-peak decline above 1200°C are recovered, validating that SHAP captures non-monotonic dependencies, not just linear trends.
 2. A saturating benefit from dopant substitution, with SHAP 
    contribution plateauing near the encoded optimum.
 3. Li excess acting as an independent compositional compensation, 
@@ -205,7 +202,7 @@ physics. Discovery on real data is the role of Lithium-Solid-State-Electrolyte-S
 ## Bayesian Optimization (GPR + EI)
 
 Beyond interpretation, this repository also demonstrates composition optimization using Bayesian Optimization with a Gaussian Process surrogate (GPR) and Expected Improvement (EI) acquisition function.
-The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize log₁₀(σ). The convergence curve shows that BO identifies near-optimal compositions within ~20 iterations, improving upon the random initialization baseline.
+The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize log₁₀(σ). The convergence curve shows that The BO curve plateaus at a synthetic score of 1.265 within ~20 iterations, with no further improvement observed through iteration 30. The convergence pattern — rapid gain followed by plateau — is consistent with successful optimization within the bounded search space.
 
 <img width="600" height="381" alt="bo_convergence" src="https://github.com/user-attachments/assets/845977d3-fb5a-4c1d-a7d1-8d1e717b85c1" />
 
