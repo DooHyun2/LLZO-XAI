@@ -208,6 +208,8 @@ The RF model trained on synthetic data serves as an oracle. GPR learns the respo
 
 The dashed line marks the end of random initialization (n=10). Subsequent BO iterations make targeted improvements, converging to log₁₀(σ) = 1.265.
 
+Search domain: dopant_frac ∈ [0, 0.25], Li_excess ∈ [0, 0.20], sinter_temp ∈ [900, 1250]°C, grain_size ∈ [1, 20] µm, dopant_code categorical {0..4} — matching the bounds of the synthetic dataset to prevent extrapolation beyond the RF oracle's training domain
+
 Note: The objective log₁₀(σ) refers to the normalized synthetic target (sigma_ion in arbitrary units), not actual S/cm. The optimization is performed entirely within the synthetic testbed, where the RF oracle is reliable; absolute values are not physically meaningful and should not be compared to real LLZO conductivity.
 
 ## How to run
