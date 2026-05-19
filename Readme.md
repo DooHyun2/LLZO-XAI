@@ -83,7 +83,7 @@ testbeds and experimental settings.
 
 
 
-<img width="830" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
+<img width="760" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
 
 RF impurity-based feature importance bar chart
 
@@ -101,7 +101,7 @@ Note: impurity-based importance is known to be biased toward high-cardinality fe
 ### SHAP Feature Ranking
 
 
-<img width="750" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
+<img width="830" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
 
 
 SHAP beeswarm summary plot
