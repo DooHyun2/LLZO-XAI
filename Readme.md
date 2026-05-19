@@ -151,7 +151,7 @@ Figure 3b : dopant_frac dependence, colored by sinter_temp
 
 Dopant fraction shows a near-monotonic positive contribution from 
 
-0 to 0.25, with mild plateauing near the upper end consistent with 
+0 to 0.30, with mild plateauing near the upper end consistent with 
 
 the encoded saturation at f ≈ 0.27. The well-mixed color 
 
@@ -204,11 +204,11 @@ physics. Discovery on real data is the role of Lithium-Solid-State-Electrolyte-S
 Beyond interpretation, this repository also demonstrates composition optimization using Bayesian Optimization with a Gaussian Process surrogate (GPR) and Expected Improvement (EI) acquisition function.
 The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize σ_ion (normalized score). The convergence curve shows that The BO curve plateaus at a synthetic score of 1.2985 within ~6 iterations, with no further improvement observed through iteration 30. The convergence pattern — rapid gain followed by plateau — is consistent with successful optimization within the bounded search space.
 
-<img width="600" height="381" alt="bo_convergence" src="https://github.com/user-attachments/assets/845977d3-fb5a-4c1d-a7d1-8d1e717b85c1" />
+<img width="580" height="360" alt="bo_convergence" src="https://github.com/user-attachments/assets/cfa034b6-f7c3-4a7b-af46-556beb513675" />
 
 converging to σ_ion = 1.2985 (normalized score)
 
-Search domain: dopant_frac ∈ [0, 0.30], Li_excess ∈ [0, 0.25], sinter_temp ∈ [900, 1250]°C, grain_size ∈ [1, 20] µm, dopant_code categorical {0..4} — matching the bounds of the synthetic dataset to prevent extrapolation beyond the RF oracle's training domain
+Search domain: dopant_frac ∈ [0, 0.30], Li_excess ∈ [0, 0.25], sinter_temp ∈ [900, 1250]°C, grain_size ∈ [1, 20] µm — matching the bounds of the synthetic dataset to prevent extrapolation beyond the RF oracle's training domain
 
 Note: The objective log₁₀(σ) refers to the normalized synthetic target (sigma_ion in arbitrary units), not actual S/cm. The optimization is performed entirely within the synthetic testbed, where the RF oracle is reliable; absolute values are not physically meaningful and should not be compared to real LLZO conductivity.
 
