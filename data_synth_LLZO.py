@@ -19,13 +19,13 @@ LiSSE-SHAP applies log10 to real experimental conductivity data.
 import numpy as np
 import pandas as pd
 
-rng = np.random.default_rng(43)
+rng = np.random.default_rng(42)
 n = 400
 
 # Input features
 dopant_code = rng.integers(0, 5, n)     # {0,1,2,3,4} → {Al, Ga, Nb, Ta, Y}
-dopant_frac = rng.uniform(0.0, 0.25, n) # B-site dopant fraction
-Li_excess   = rng.uniform(0.0, 0.20, n) # nominal Li excess (mol)
+dopant_frac = rng.uniform(0.0, 0.30, n) # B-site dopant fraction
+Li_excess   = rng.uniform(0.0, 0.25, n) # nominal Li excess (mol)
 sinter_temp = rng.uniform(900, 1250, n) # °C
 grain_size  = rng.uniform(1.0, 20.0, n) # μm
 
@@ -40,7 +40,7 @@ noise = rng.normal(0, 0.05, n)
 sigma_ion = (
     0.5
     + dopant_shift
-    # dopant_frac quadratic peaks near optimal substitution (~0.25)
+    # dopant_frac quadratic peaks near optimal substitution (~0.27)
     + 1.6 * dopant_frac - 3.0 * (dopant_frac ** 2)
     # sintering quadratic peaks near densification optimum (~1100-1160°C)
     + 0.0012 * (sinter_temp - 900) - 0.00001 * (sinter_temp - 1100) ** 2
