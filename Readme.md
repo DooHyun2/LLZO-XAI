@@ -101,7 +101,7 @@ Note: impurity-based importance is known to be biased toward high-cardinality fe
 ### SHAP Feature Ranking
 
 
-<img width="830" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
+<img width="880" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
 
 
 SHAP beeswarm summary plot
