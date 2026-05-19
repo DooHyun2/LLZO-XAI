@@ -1,4 +1,3 @@
-<img width="1500" height="1000" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/98067b88-00cf-43e7-bd08-916218c1996d" />
 # LLZO-Synthetic: SHAP Interpretation and Bayesian Optimization on Synthetic LLZO Data
 
 Random Forest + SHAP + Bayesian Optimization pipeline for decomposing and optimizing processing–composition effects on Li-ion conductivity in LLZO solid electrolytes (synthetic testbed).
