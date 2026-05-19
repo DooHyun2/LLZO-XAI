@@ -210,7 +210,7 @@ converging to σ_ion = 1.2985 (normalized score)
 
 Search domain: dopant_frac ∈ [0, 0.30], Li_excess ∈ [0, 0.25], sinter_temp ∈ [900, 1250]°C, grain_size ∈ [1, 20] µm — matching the bounds of the synthetic dataset to prevent extrapolation beyond the RF oracle's training domain
 
-Note: The objective log₁₀(σ) refers to the normalized synthetic target (sigma_ion in arbitrary units), not actual S/cm. The optimization is performed entirely within the synthetic testbed, where the RF oracle is reliable; absolute values are not physically meaningful and should not be compared to real LLZO conductivity.
+Note: The objective σ_ion is a normalized synthetic score in arbitrary units, not actual S/cm. The optimization is performed entirely within the synthetic testbed, where the RF oracle is reliable; absolute values are not physically meaningful and should not be compared to real LLZO conductivity
 
 ## How to run
 ```bash
