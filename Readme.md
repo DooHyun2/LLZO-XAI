@@ -202,11 +202,11 @@ physics. Discovery on real data is the role of Lithium-Solid-State-Electrolyte-S
 ## Bayesian Optimization (GPR + EI)
 
 Beyond interpretation, this repository also demonstrates composition optimization using Bayesian Optimization with a Gaussian Process surrogate (GPR) and Expected Improvement (EI) acquisition function.
-The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize σ_ion (normalized score). The convergence curve shows that The BO curve plateaus at a synthetic score of 1.265 within ~20 iterations, with no further improvement observed through iteration 30. The convergence pattern — rapid gain followed by plateau — is consistent with successful optimization within the bounded search space.
+The RF model trained on synthetic data serves as an oracle. GPR learns the response surface from evaluated points and proposes the next composition to maximize σ_ion (normalized score). The convergence curve shows that The BO curve plateaus at a synthetic score of 1.2985 within ~6 iterations, with no further improvement observed through iteration 30. The convergence pattern — rapid gain followed by plateau — is consistent with successful optimization within the bounded search space.
 
 <img width="600" height="381" alt="bo_convergence" src="https://github.com/user-attachments/assets/845977d3-fb5a-4c1d-a7d1-8d1e717b85c1" />
 
-The dashed line marks the end of random initialization (n=10). Subsequent BO iterations make targeted improvements, converging to log₁₀(σ) = 1.265.
+converging to σ_ion = 1.2985 (normalized score)
 
 Search domain: dopant_frac ∈ [0, 0.30], Li_excess ∈ [0, 0.25], sinter_temp ∈ [900, 1250]°C, grain_size ∈ [1, 20] µm, dopant_code categorical {0..4} — matching the bounds of the synthetic dataset to prevent extrapolation beyond the RF oracle's training domain
 
