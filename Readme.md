@@ -22,8 +22,6 @@ these encoded structure–processing–property relationships, it cannot
 
 be trusted on real data.
 
-**Successor project**: [Lithium-Solid-State-Electrolyte-SHAP](https://github.com/DooHyun2/Lithium-Solid-State-Electrolyte-SHAP) — 
-the same framework applied to experimentally measured ionic conductivities.
 
 
 
