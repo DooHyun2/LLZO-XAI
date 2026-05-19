@@ -1,3 +1,4 @@
+<img width="1500" height="1000" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/98067b88-00cf-43e7-bd08-916218c1996d" />
 # LLZO-Synthetic: SHAP Interpretation and Bayesian Optimization on Synthetic LLZO Data
 
 Random Forest + SHAP + Bayesian Optimization pipeline for decomposing and optimizing processing–composition effects on Li-ion conductivity in LLZO solid electrolytes (synthetic testbed).
@@ -83,7 +84,8 @@ testbeds and experimental settings.
 
 
 
-<img width="760" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/8812b5ce-287d-4a15-98e5-6b42ec2486d0" />
+<img width="770" height="576" alt="feat_importance" src="https://github.com/user-attachments/assets/531cd1ae-19c9-44b0-b870-666e5ecf05f7" />
+
 
 RF impurity-based feature importance bar chart
 
@@ -101,7 +103,7 @@ Note: impurity-based importance is known to be biased toward high-cardinality fe
 ### SHAP Feature Ranking
 
 
-<img width="880" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/721531c3-e7b4-40cc-aef6-67c1cb2d23db" />
+<img width="880" height="500" alt="LLZO_shap_beeswarm" src="https://github.com/user-attachments/assets/48ec6b6b-728a-4acd-8553-f3747d2f7bee" />
 
 
 SHAP beeswarm summary plot
@@ -124,7 +126,8 @@ size contribute only marginally.
 
 ### Dependence Plots (Top-3 Features)
 
-<img width="660" height="450" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/0b80e219-09f7-46f9-bf30-a5f5c899e8bd" />
+<img width="660" height="450" alt="shap_depend_sinter_temp" src="https://github.com/user-attachments/assets/cbe044ad-f3df-4dfe-9af2-9c596bf4a99c" />
+
 
 Figure 3a : sinter_temp dependence, colored by dopant_frac
 
@@ -143,7 +146,7 @@ well-mixed vertically, indicating the sintering effect is largely
 independent of dopant loading in this range.
 
 
-<img width="770" height="500" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/5cca192f-f36e-4d29-ab71-1e39346c4c3a" />
+<img width="770" height="500" alt="shap_depend_dopant_frac" src="https://github.com/user-attachments/assets/a10ea1ce-56af-474e-8fe3-85392b0782c7" />
 
 
 Figure 3b : dopant_frac dependence, colored by sinter_temp
@@ -162,7 +165,8 @@ from sintering temperature, rather than dominated by a single
 dopant–temperature regime
 
 
-<img width="800" height="560" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/74ac23b0-2539-49a2-b7ee-c03acb59266c" />
+<img width="800" height="560" alt="shap_depend_Li_excess" src="https://github.com/user-attachments/assets/7bfff6b0-f7d4-4ec0-b734-cb6c5af9a902" />
+
 
 Figure 3c: Li_excess dependence, colored by sinter_temp
 
